@@ -1,0 +1,9 @@
+version: '2'
+services:
+ nginx:
+  container_name: nginx
+  image: nginx
+  ports:
+  - "80:80"
+  volumes:
+  - ./nginx-data/html:/usr/share/nginx/html
